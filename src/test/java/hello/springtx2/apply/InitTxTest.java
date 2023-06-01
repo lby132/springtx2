@@ -42,7 +42,7 @@ public class InitTxTest {
             log.info("Hello init @PostConstruct tx active={}", isActive);
         }
 
-        //위 코드 해결법.
+        //위 코드 해결법.f
         //@EventListener(ApplicationReadyEvent.class) 이 코드는 스프링이 완전히 다 뜨고 초기화가 된다.
         //즉 Transaction aop가 실행이 되고 초기화가 됨. 그래서 초기화에도 트랜잭션이 적용됨.
         @EventListener(ApplicationReadyEvent.class)
